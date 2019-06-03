@@ -2,8 +2,8 @@
         오라클 데이타 unload를 위한 오라클 procedure 생성과 
         MariaDB에 이관 후 데이터 검증을 위한 MariaDB unload SQL 생성
 
-        사용법 : make_utl_proc  [오라클 desc]  [테이블명]
-        ex) make_utl_proc  day201_desc.txt  day201
+        사용법 : make_oracle_unload_procedure  [오라클 desc]  [테이블명]
+        ex) make_oracle_unload_procedure  day201_desc.txt  day201
         Input file  : day201_desc.txt
         Output file : MIG_day201.sql 
                       MIG_day201_maria.sql
@@ -34,7 +34,7 @@ char *argv[3];
 
 	if (argc != 3)
 	{
-	   fprintf(stderr,"Usage : %s  COLUMN_INFO  TABLE_NAME\n",argv[0]);
+	   fprintf(stderr,"Usage : %s  [오라클_desc]  [테이블명]\n",argv[0]);
 	   exit(1);
 	}
 
