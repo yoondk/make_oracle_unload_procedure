@@ -12,6 +12,8 @@
         오라클 스키마, ordery by 절 PRIMARY 정렬확인
 */
 
+
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
