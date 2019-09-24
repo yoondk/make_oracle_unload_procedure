@@ -87,6 +87,7 @@ char *argv[3];
 /* output file name : MIG_{table name}_maria.sql */
 	strcpy(out_name,"MIG_");
 	strcat(out_name,tab_name);
+  strcat(out_name,"_maria");
 	strcat(out_name,".sql");
 
 /* Open maria sql file */
